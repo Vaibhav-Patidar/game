@@ -4,8 +4,8 @@ import pygame
 from pygame.locals import * # Basic pygame imports
 
 # Global Variables for the game
-FPS = 28
-SCREENWIDTH = 289
+FPS = 66
+SCREENWIDTH = 600
 SCREENHEIGHT = 511
 SCREEN = pygame.display.set_mode((SCREENWIDTH, SCREENHEIGHT))
 GROUNDY = SCREENHEIGHT * 0.8
@@ -69,7 +69,7 @@ def mainGame():
     playerVelY = -9
     playerMaxVelY = 10
     playerMinVelY = -8
-    playerAccY = 1
+    playerAccY = 0.5
 
     playerFlapAccv = -8 # velocity while flapping
     playerFlapped = False # It is true only when the bird is flapping
